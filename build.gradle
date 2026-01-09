@@ -1,0 +1,49 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.5.9'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.flowcommerce'
+version = '0.0.1-SNAPSHOT'
+description = 'Live Commerce Platform with Real-time Streaming'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa:3.5.9")
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation("com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5")
+    implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.14")
+
+    implementation("org.springframework.boot:spring-boot-starter-actuator:3.5.9")
+    implementation("io.micrometer:micrometer-registry-prometheus:1.16.1")
+
+    implementation("com.navercorp.fixturemonkey:fixture-monkey:1.1.15")
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation 'com.h2database:h2'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

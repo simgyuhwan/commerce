@@ -1,0 +1,134 @@
+### Gradle ###
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Spring Boot ###
+HELP.md
+spring-boot-starter-parent.iml
+
+### Application Properties (Sensitive) ###
+# Keep template files, ignore local environment configs
+application-local.yml
+application-prod.yml
+application-*.properties
+!application.yml
+!application-test.yml
+
+### Environment Variables ###
+.env
+.env.local
+.env.*.local
+
+### Logs ###
+logs/
+*.log
+log/
+spring.log
+
+### Database ###
+*.db
+*.sqlite
+*.h2.db
+*.mv.db
+*.trace.db
+
+### Redis ###
+dump.rdb
+*.rdb
+
+### File Upload Directory ###
+uploads/
+upload/
+files/
+
+### Encryption Keys ###
+jasypt.key
+*.jks
+*.p12
+*.pem
+*.key
+
+### Test Coverage ###
+.jacoco/
+jacoco.exec
+coverage/
+
+### OS Files ###
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+### Temporary Files ###
+*.tmp
+*.temp
+*.swp
+*.swo
+*~.nib
+*.bak
+*.class
+*.jar
+!gradle/wrapper/*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
