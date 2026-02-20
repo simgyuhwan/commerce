@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(./gradlew test:*)",
+      "Bash(tree:*)",
+      "Bash(./gradlew compileJava:*)",
+      "Bash(find:*)",
+      "Bash(./gradlew compileKotlin compileJava:*)",
+      "Bash(./gradlew compileTestJava:*)",
+      "Bash(./gradlew compileTestKotlin:*)",
+      "Bash(./gradlew build:*)",
+      "Bash(./gradlew compileKotlin:*)"
+    ]
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true
+  }
+}
