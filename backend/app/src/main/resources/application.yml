@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: live_commerce
+
+  profiles:
+    active: local  # 배포 시 제거
+
+  # JPA 공통
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MariaDBDialect
+
+  # Flyway 공통
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+
+# Server
+server:
+  port: 8080
+
+# Logging
+logging:
+  level:
+    root: INFO
+    com.livecommerce: DEBUG
