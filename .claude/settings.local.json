@@ -9,7 +9,9 @@
       "Bash(./gradlew compileTestJava:*)",
       "Bash(./gradlew compileTestKotlin:*)",
       "Bash(./gradlew build:*)",
-      "Bash(./gradlew compileKotlin:*)"
+      "Bash(./gradlew compileKotlin:*)",
+      "Bash(cd:*)",
+      "Bash(tail:*)"
     ]
   },
   "enabledPlugins": {

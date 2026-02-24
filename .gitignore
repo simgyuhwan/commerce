@@ -133,3 +133,5 @@ $RECYCLE.BIN/
 *.tar.gz
 *.rar
 backend-old/
+
+.AGENTS.md
